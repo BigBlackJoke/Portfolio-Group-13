@@ -31,3 +31,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../css/fonts/impact.ttf') format('woff2');
+}
