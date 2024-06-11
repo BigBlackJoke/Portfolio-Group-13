@@ -55,6 +55,10 @@
     position: absolute;
 }
 
+.link-to-order:hover + .decorative {
+    background: rgba(0, 176, 104, 0.6);
+}
+
 .hero-article {
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -97,6 +101,10 @@
     line-height: 1.50;
     letter-spacing: 0.03em;
     color: #000000;
+}
+
+.social-links-list a:hover {
+    color: #00B068;
 }
 
 
