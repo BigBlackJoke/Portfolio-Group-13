@@ -1,3 +1,13 @@
+body{
+    margin: 0;
+}
+
+.header{
+    --header-h:64px;
+    background: red;
+    height: var(--header-h);
+}
+
 .container {
     max-width: 320px;
     padding-left: 16px;
@@ -7,7 +17,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 .logo{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: 400;
@@ -22,4 +31,31 @@
 
 .logo > span {
     color:#00b068;
+}
+
+
+.header-nav{
+    position: absolute;
+    top: var(--header-h);
+    left:0;
+    right: 0;
+    height: calc(100dvh - var(--header-h));
+    background: red;
+    z-index: 1000;
+    /* display: none; */
+}
+
+
+.nav-menu{
+   
+    
+   
+}
+
+
+.nav-menu-item{
+    font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
 }
