@@ -1,0 +1,25 @@
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--black);
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+.logo > span {
+    color:#00b068;
+}
