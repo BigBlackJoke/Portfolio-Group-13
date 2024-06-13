@@ -37,3 +37,30 @@
   src: url('../css/fonts/impact.woff2') format('woff2'),
        url('../css/fonts/impact.woff') format('woff');
 }
+
+.title {
+  font-family: 'Impact';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.container {
+  max-width: 340px;
+  margin: 40px 0 40px 0;
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+    margin: 62px 0 62px 0;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 81px 0 81px 0;
+  }
+}
+
