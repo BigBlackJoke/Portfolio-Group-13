@@ -6,7 +6,7 @@
 }
 
 .dark {
-    
+    background-color: #292929;
 }
 
 .hero-title {
@@ -19,6 +19,10 @@
     color: #000000;
 
     padding-top: 96px;
+}
+
+.dark .hero-title {
+    color: #fff;
 }
 
 .hero-title span {
@@ -50,6 +54,10 @@
     width: 100%;
 }
 
+.dark .link-to-order {
+    color: #fff;
+}
+
 .decorative {
     background: rgba(0, 176, 104, 0.2);
     border-radius: 16px;
@@ -57,10 +65,21 @@
     height: 92px;
     left: 155px;
     position: absolute;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: left 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .decorative {
+    background-color: rgba(20, 197, 124, 0.2);
 }
 
 .link-to-order:hover + .decorative {
     background: rgba(0, 176, 104, 0.6);
+    left: 20px;
+}
+
+.dark .link-to-order:hover + .decorative {
+    background-color: rgba(20, 197, 124, 0.6);
 }
 
 .hero-article {
@@ -79,6 +98,10 @@
     margin-top: 40px;
 }
 
+.dark .hero-article {
+    color: #fff;
+}
+
 .hero-article span {
     color: #00B068;
 }
@@ -88,6 +111,10 @@
     margin-top: 12px;
     min-width: 375px;
     margin: 0 auto;
+}
+
+.dark .social-links {
+    background-color: #2a2d32;
 }
 
 .social-links-list {
@@ -105,6 +132,11 @@
     line-height: 1.50;
     letter-spacing: 0.03em;
     color: #000000;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .social-links-list a {
+    color: #fff;
 }
 
 .social-links-list a:hover {
