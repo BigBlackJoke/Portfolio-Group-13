@@ -1,0 +1,131 @@
+/* Common styles
+* {
+  box-sizing: border-box;
+}
+:root {
+  --black: #292929;
+  --accent-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+}
+.container {
+  flex-direction: column;
+  align-items: start;
+}
+.header-nav {
+  display: none;
+}
+/* Common classes */
+/* .title {
+  font-family: 'Impact';
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+} */
+
+.work-together {
+  padding: 80px 0;
+}
+.work-together__title {
+  margin-bottom: 40px;
+  font-size: 52px;
+  line-height: 123%;
+}
+.work-together__title span {
+  color: var(--accent-green);
+}
+.work-together__text {
+  margin-bottom: 32px;
+
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.work-together__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 16px;
+  margin-bottom: 40px;
+}
+.work-together__phone,
+.work-together__mail,
+.work-together__location {
+  position: relative;
+  padding-left: 40px;
+  font-weight: 300;
+  font-style: normal;
+}
+.work-together__phone::before,
+.work-together__mail::before,
+.work-together__location::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.work-together__phone::before {
+  background: url('../img/icons/icon-phone.svg') no-repeat;
+}
+.work-together__location::before {
+  background: url('../img/icons/icon-location.svg') no-repeat;
+}
+.work-together__mail::before {
+  background: url('../img/icons/icon-mail.svg') no-repeat;
+}
+.work-together__form {
+}
+.work-together__email,
+.work-together__message {
+  width: 100%;
+  padding: 16px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--light-grey);
+  margin-bottom: 32px;
+  color: var(--black);
+}
+.work-together__email {
+}
+.work-together__message {
+  min-height: 128px;
+  resize: none;
+}
+.work-together__email::placeholder,
+.work-together__message::placeholder {
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+}
+.work-together__button {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: var(--accent-green);
+  border: none;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+
+  transition: background 250ms ease-in-out;
+}
+.work-together__button:hover {
+  background-color: #009156;
+}
