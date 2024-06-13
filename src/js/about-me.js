@@ -33,7 +33,7 @@ export function createSectionMarkup() {
                                 calm demeanor, maintaining a consistently high quality of work. Committed to
                                 self-improvement, I
                                 actively engage in
-                                studying new technologies and practices to stay current with the  latest innovations in
+                                studying new technologies and practices to stay current with the latest innovations in
                                 the field.
                             </P>
                         </li>
