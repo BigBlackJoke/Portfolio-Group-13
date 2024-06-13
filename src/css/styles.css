@@ -31,11 +31,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  -black: #292929;
-  -accent-green: #00B068;
-  -white: #F0F0F0;
-  -light-grey: #E4E5E6;
-  -light-accent: #BCDFD1;
+  --black: #292929;
+  --accent-green: #00B068;
+  --white: #F0F0F0;
+  --light-grey: #E4E5E6;
+  --light-accent: #BCDFD1;
+
+  --transition: 250ms ease-in-out;
 }
 
 @font-face {
@@ -53,20 +55,22 @@
 
 .container {
   max-width: 340px;
-  margin: 40px 0 40px 0;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width:768px) {
   .container {
     max-width: 768px;
-    margin: 62px 0 62px 0;
+    margin: 0 auto;
+    padding: 0 32px;
   }
 }
 
 @media screen and (min-width:1280px) {
   .container {
     max-width: 1280px;
-    margin: 81px 0 81px 0;
+    margin: 0 auto;
   }
 }
 
