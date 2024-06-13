@@ -1,9 +1,26 @@
 .container {
     padding: 0 20px;
     width: 100%;
-    margin: 0 auto;
     max-width: 375px;
+    position: relative;
 }
+
+.background-decorative {
+    fill: #00B068;
+    filter: blur(2px);
+    position: absolute;
+}
+
+.background-1 {
+    top: 410px;
+    left: 150px;
+}
+
+.background-2 {
+    top: 10px;
+    left: 1px;
+}
+
 
 .dark {
     background-color: #292929;
@@ -17,7 +34,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000000;
-
     padding-top: 96px;
 }
 
@@ -31,13 +47,18 @@
 
 .order-container {
     margin-top: 40px;
+    /* margin-left: 72px; */
     padding: 32px 0;
-    padding-left: 44px; /* прибрати потім */
-
+    width: 320px;
     display: flex;
+    gap: 12px;
     position: relative;
 
     align-items: center;
+}
+
+.order-icon {
+    fill: #00B068;
 }
 
 .link-to-order {
@@ -90,7 +111,7 @@
     color: #000000;
     padding-bottom: 56px;
 
-    max-width: 320px;
+    width: 320px;
     height: auto;
 
     margin-top: 40px;
@@ -149,6 +170,19 @@
         max-width: 768px;
     }
 
+    .background-1 {
+        width: 356px;
+        height: 276px;
+        top: 520px;
+        rotate: 90deg;
+        left: 180px;
+    }
+
+    .background-2 {
+        left: 430px;
+        top: 30px;
+    }
+
     .hero-title {
         font-size: 136px;
         line-height: 1.15;
@@ -177,7 +211,7 @@
     .hero-article {
         font-size: 20px;
         line-height: 1.60;
-        max-width: 704px;
+        width: 704px;
         padding-bottom: 64px;
     }
 
@@ -202,11 +236,48 @@
         min-width: 1280px;
     }
 
+    .background-1 {
+        top: 500px;
+        left: 150px;
+        rotate: 80deg;
+    }
+
+    .background-2 {
+        top: -40px;
+        left: 800px;
+        rotate: 35deg;
+    }
+
     .hero-title {
         font-size: 124px;
         line-height: 1.19;
-        padding-top: 72px;
+        padding-top: 0;
         width: 552px;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 72px;
+        align-items: center;
+        padding-top: 72px;
+    }
+
+    .hero-img {
+        width: 592px;
+        height: 444px;
+        background-image: url(../img/hero/hero-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 32px;
+        z-index: 1;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-img {
+            background-image: url(../img/hero/hero-img@2x.jpg);
+        }
     }
 
     .content-container {
@@ -230,8 +301,7 @@
     .hero-article {
         font-size: 20px;
         line-height: 1.60;
-        min-width: 592px;
-        width: 100%;
+        width: 592px;
         margin-top: 0;
         padding-bottom: 0;
     }
@@ -241,7 +311,7 @@
     }
 
     .link-to-order:hover + .decorative {
-        left: 20px;
+        left: -10px;
     }
 
 }
