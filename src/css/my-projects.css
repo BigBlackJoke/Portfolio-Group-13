@@ -114,6 +114,11 @@
 
 
 @media screen and (min-width: 768px) {
+    .projects-section {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+
     .projects-container {
         max-width: 768px;
         padding: 0 32px;
@@ -163,6 +168,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .projects-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
     .projects-container {
         max-width: 1280px;
         padding: 0 136px;
