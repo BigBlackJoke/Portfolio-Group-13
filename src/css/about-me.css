@@ -1,0 +1,69 @@
+.cont-about-me {
+    width: 320px;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.title {
+    /* font-weight: 400; */
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    /* text-align: right; */
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.title-span {
+    color: #00b068;
+}
+
+.img-about-me {
+    margin-bottom: 40px;
+}
+
+.title-three {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.cont-bio {
+    margin-bottom: 40px;
+}
+
+.cont-bio li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.icon-decor-about {
+    display: none;
+}
+
+.cont-education {
+    margin-bottom: 40px;
+}
+
+.cont-education li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.li-item {
+    display: flex;
+    gap: 8px;
+
+}
+
+.icon-about {
+    flex-shrink: 0;
+    border-radius: 1px;
+}
+
+.cont-role li:not(:last-child) {
+    margin-bottom: 12px;
+}
