@@ -30,6 +30,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  -black: #292929;
+  -accent-green: #00B068;
+  -white: #F0F0F0;
+  -light-grey: #E4E5E6;
+  -light-accent: #BCDFD1;
 }
 
 @font-face {
