@@ -1,6 +1,6 @@
 const section = document.getElementById('#about_me');
 
-function createSectionMarkup() {
+export function createSectionMarkup() {
   return `
   <div class="cont-about-me">
             <h2 class="title">ABOUT <span class="title-span">ME</span></h2>
@@ -11,7 +11,7 @@ function createSectionMarkup() {
                     <h3 class="title-three">BIO</h3>
                     <ul>
                         <li>
-                            <P>I'm Lloyd Jefferson, a talented programmer specializing  in software development. My
+                            <P>I'm Lloyd Jefferson, a talented programmer specializing in software development. My
                                 expertise spans
                                 various programming
                                 languages and technologies, and I am dedicated to continually enhancing my skills. I
