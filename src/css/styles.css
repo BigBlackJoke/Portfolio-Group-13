@@ -33,6 +33,7 @@
 }
 
 @font-face {
-  font-family: 'Impact';
-  src: url('../css/fonts/impact.ttf') format('woff2');
+  font-family: 'Impact', Arial, sans-serif;
+  src: url('../css/fonts/impact.woff2') format('woff2'),
+       url('../css/fonts/impact.woff') format('woff');
 }
