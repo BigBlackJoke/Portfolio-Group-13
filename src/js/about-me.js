@@ -4,8 +4,8 @@ export function createSectionMarkup() {
   return `
   <div class="cont-about-me">
             <h2 class="title">ABOUT <span class="title-span">ME</span></h2>
-            <img class="img-about-me" srcset="../img/About_me/About_me_1x.jpg 1x, ../img/About_me/About_me_1x.jpg 2x"
-                src="../img/About_me_1x.jpg" alt="About me" width="320" height="374" />
+            <img class="img-about-me" srcset="./img/About_me/About_me_1x.jpg 1x, ./img/About_me/About_me_1x.jpg 2x"
+                src="./img/About_me_1x.jpg" alt="About me" width="320" height="374" />
             <ul>
                 <li class="cont-bio">
                     <h3 class="title-three">BIO</h3>

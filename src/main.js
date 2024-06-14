@@ -13,3 +13,7 @@ navItems.forEach(item => {
         nav.classList.remove('active')
     })
 })
+
+import { createSectionMarkup } from './js/about-me';
+
+createSectionMarkup();
