@@ -1,4 +1,4 @@
-/* Common styles
+Common styles
 * {
   box-sizing: border-box;
 }
@@ -17,13 +17,13 @@
   display: none;
 }
 /* Common classes */
-/* .title {
+.title {
   font-family: 'Impact';
   font-weight: 400;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black);
-} */
+}
 
 .work-together {
   padding: 80px 0;
@@ -124,7 +124,7 @@
   text-transform: uppercase;
   color: var(--white);
 
-  transition: background 250ms ease-in-out;
+  transition: background var(--transition);
 }
 .work-together__button:hover {
   background-color: #009156;
