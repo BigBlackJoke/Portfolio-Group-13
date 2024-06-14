@@ -2,21 +2,28 @@
     width: 320px;
     padding: 40px 20px;
     margin: 0 auto;
+
 }
 
 .title {
-    /* font-weight: 400; */
-    font-size: 52px;
+    width: 217px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    /*??? font-weight: 400; font-size: 52px;*/
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* text-align: right; */
     color: #292929;
     margin-bottom: 40px;
 }
 
 .title-span {
     color: #00b068;
+}
+
+.cont-img-bio {
+    margin-bottom: 40px;
 }
 
 .img-about-me {
@@ -33,16 +40,8 @@
     margin-bottom: 32px;
 }
 
-.cont-bio {
-    margin-bottom: 40px;
-}
-
 .cont-bio li:not(:last-child) {
     margin-bottom: 24px;
-}
-
-.icon-decor-about {
-    display: none;
 }
 
 .cont-education {
@@ -67,3 +66,81 @@
 .cont-role li:not(:last-child) {
     margin-bottom: 12px;
 }
+
+/* =============== min-width: 768px ================ */
+
+@media screen and (min-width: 768px) {
+    .cont-about-me {
+        width: 768px;
+        padding: 62px 32px;
+    }
+
+    .title {
+        width: 437px;
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+    }
+
+    .img-about-me {
+        width: 336px;
+        margin-bottom: 0;
+    }
+
+    .cont-img-bio {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        align-items: end;
+        margin-bottom: 60px;
+    }
+
+    .cont-bio {
+        width: 336px;
+        padding-bottom: 80px;
+    }
+
+    .background-image {
+        position: relative;
+    }
+
+    .background-image::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: 4px;
+        width: 336px;
+        height: 252px;
+        background-image: url('../img/about-me/decor_bg_tab.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .icon-decor-about {
+        display: block;
+        width: 336px;
+        height: 252px;
+        text-align: right;
+    }
+
+    /* =============================== */
+    .cont-education-role {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 32px; */
+    }
+
+    .cont-education {
+        width: 336px;
+        margin-bottom: 0;
+    }
+
+    .cont-role {
+        width: 336px;
+    }
+}
+
+/* ============== min-width: 1280px ================= */
+
+@media screen and (min-width: 1280px) {}

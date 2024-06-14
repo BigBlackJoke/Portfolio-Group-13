@@ -3,9 +3,9 @@ const section = document.getElementById('#about_me');
 export function createSectionMarkup() {
   return `
   <div class="cont-about-me">
-            <h2 class="title">ABOUT <span class="title-span">ME</span></h2>
-            <img class="img-about-me" srcset="../img/About_me/About_me_1x.jpg 1x, ../img/About_me/About_me_1x.jpg 2x"
-                src="../img/About_me_1x.jpg" alt="About me" width="320" height="374" />
+            <h2 class="title">ABOUT<span class="title-span">ME</span></h2>
+            <img class="img-about-me" srcset="../img/about-me/about_me_1x.jpg 1x, ../img/about-me/about_me_2x.jpg 2x"
+                src="../img/about-me/about_me_1x.jpg" alt="About me" width="320" height="374" />
             <ul>
                 <li class="cont-bio">
                     <h3 class="title-three">BIO</h3>
@@ -39,7 +39,7 @@ export function createSectionMarkup() {
                         </li>
                     </ul>
                     <svg class="icon-decor-about">
-                        <use href="../img/About_me/symbol-defs.svg#icon-decor-bg-2"></use>
+                        <use href="../img/about-me/symbol-defs.svg#icon-decor-bg-2"></use>
                     </svg>
                 </li>
                 <li class="cont-education">
@@ -47,19 +47,19 @@ export function createSectionMarkup() {
                     <ul>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
                         </li>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
                         </li>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
                         </li>
@@ -70,19 +70,19 @@ export function createSectionMarkup() {
                     <ul>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>Frontend development</p>
                         </li>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>HeadlessCMS, Wordpress</p>
                         </li>
                         <li class="li-item">
                             <svg class="icon-about" width="24" height="24">
-                                <use href="../img/About_me/symbol-defs.svg#icon-greenSmall"></use>
+                                <use href="../img/about-me/symbol-defs.svg#icon-greenSmall"></use>
                             </svg>
                             <p>Blender (enjoy)</p>
                         </li>
@@ -92,6 +92,6 @@ export function createSectionMarkup() {
         </div>
   `;
 }
-const sectionMarkup = createSectionMarkup();
+// const sectionMarkup = createSectionMarkup();
 
-section.insertAdjacentHTML('afterbegin', sectionMarkup);
+// section.insertAdjacentHTML('afterbegin', sectionMarkup);
