@@ -1,45 +1,97 @@
-import Swiper from 'swiper';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import axios from 'axios';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-import { getReview } from "./reviews-api";
-import { reviewtTamplate } from "./reviews-render";
+async function getApi() {
+    const BASE_URL = 'https://portfolio-js.b.goit.study/api';
+    const END_POINT = '/reviews';
+    const url = `${BASE_URL}${END_POINT}`;
+    try {
+    const response = await axios.get(url);
+    return response.data; 
+    } catch (error) {
+    console.error('Error fetching data from API', error);
+    throw error;
+    }
+}
 
-// Ініціалізація Swiper з використанням потрібних модулів
-Swiper.use([Navigation, Keyboard, Mousewheel]);
 
-document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, //Початкове значення для mob and tab
-    navigation: {
+function createMarkup(data) {
+    return data.map(el => 
+    `
+        <div class="swiper-slide">
+        <p class="text">${el.review}</p>
+        <div class="author-container">
+            <img src="${el.avatar_url}" alt="">
+            <h3 class="author">${el.author}</h3>
+        </div>
+        </div>
+    `
+    ).join('');
+}
+
+async function initSwiper() {
+    try {
+    const data = await getApi();
+    const markup = createMarkup(data);
+    
+    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    swiperWrapper.innerHTML = markup;
+    
+    new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-    },
-    mousewheel: {
-        invert: false,
-    },
-    on: {
-        reachEnd: function() {
-        document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled');
         },
-        reachBeginning: function() {
-        document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled');
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        320: { 
+        slidesPerView: 1,
+        spaceBetween: 10
         },
-        fromEdge: function() {
-        document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
-        document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
+        768: { 
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+        1280: { 
+        slidesPerView: 2,
+        spaceBetween: 30
         }
-    }
+    },
+    centeredSlides: false, 
+    slidesPerView: 'auto', 
     });
 
-    function updateSlider() {
-        const width = window.innerWidth;
-        let newSlidesPerView;
-        if(width >= 1280 ){
-            newSlidesPerView = 2;
-        }
+    swiper.on('slideChange', function () {
+        updateNavigationButtons(swiper);
+    });
+
+    updateNavigationButtons(swiper);
+    } catch (error) {
+        console.error(error);
     }
-});
+}
+
+function updateNavigationButtons(swiper) {
+    const { isBeginning, isEnd } = swiper;
+    const prevButton = document.querySelector('.swiper-button-prev');
+    const nextButton = document.querySelector('.swiper-button-next');
+    
+    if (isBeginning) {
+    prevButton.classList.add('swiper-button-disabled');
+    } else {
+    prevButton.classList.remove('swiper-button-disabled');
+    }
+    
+    if (isEnd) {
+    nextButton.classList.add('swiper-button-disabled');
+    } else {
+    nextButton.classList.remove('swiper-button-disabled');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initSwiper);

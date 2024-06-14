@@ -1,18 +1,14 @@
 <section>
-    <h2>Reviews</h2>
-    <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <ul class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-    </ul>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
+    <div class="container">
+        <h2 class="review-title">Reviews</h2>
+        <div class="swiper-container">
+            <ul class="swiper-wrapper"></ul>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next button-next"><svg width="24" htight="24" class="next"><use href="/src/img/symbol-defs.svg#icon-arrow-right"></use></svg></div>
+            <div class="swiper-button-prev button-prev"><svg width="24" htight="24" class="prev"><use href="/src/img/symbol-defs.svg#icon-arrow-left"></use></svg></div>
+        </div>
+    </div>
 </section>
+
+<link rel="stylesheet" href="./src/css/reviews.css">
 <script type="module" src="../js/reviews/reviews.js"></script>
-<!-- <script type="module" src="../js/reviews/reviews-api.js"></script> -->
