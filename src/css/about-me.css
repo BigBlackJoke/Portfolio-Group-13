@@ -61,7 +61,8 @@
 
 .icon-about {
     flex-shrink: 0;
-    border-radius: 1px;
+    border-radius: 50%;
+    align-self: center;
 }
 
 .cont-role li:not(:last-child) {
