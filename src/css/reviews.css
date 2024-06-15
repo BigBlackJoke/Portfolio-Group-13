@@ -4,8 +4,20 @@
     padding: 0 20px;
 }
 
+.title-dark{
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .review-title{
-    font-family: var(--second-family);
+    font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 1.23;
@@ -27,6 +39,19 @@
     display: flex;
 }
 
+.swiper-dark{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 32px;
+    width: 320px;
+    /* min-height: 296px; */
+    box-sizing: border-box;
+    background: #2A2D32;
+    margin-bottom: 24px;
+    /* position: relative; */
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -40,7 +65,19 @@
     /* position: relative; */
 }
 
+.swiper-slide p.text-dark {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.03em;
+    color: #F0F0F0;
+    margin-bottom: 24px;
+}
+
+
 .swiper-slide p.text {
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.50;
@@ -58,8 +95,17 @@
     bottom: 32px; */
 }
 
+.swiper-slide h3.author-dark {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.03em;
+    color: #F0F0F0;
+}
+
 .swiper-slide h3.author {
-    font-family: var(--font-family);
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.50;
@@ -74,17 +120,21 @@
     object-fit: cover;
 }
 
-.swiper-button-next {
+/* #button-next {
     width: 24px;
     height: 24px;
     color: #292929;
 }
 
-.swiper-button-prev {
+#button-prev {
     width: 24px;
     height: 24px;
     color: #292929;
-}
+} */
+
+/* :root {
+    --swiper-navigation-size: 24px;
+} */
 
 
 
@@ -98,7 +148,6 @@
     }
 
     .review-title{
-        font-family: var(--second-family);
         font-weight: 400;
         font-size: 108px;
         line-height: 1.15;
@@ -141,7 +190,6 @@
     }
     
     .review-title{
-        font-family: var(--second-family);
         font-weight: 400;
         font-size: 108px;
         line-height: 1.15;

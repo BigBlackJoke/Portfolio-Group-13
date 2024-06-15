@@ -19,11 +19,11 @@ async function getApi() {
 function createMarkup(data) {
     return data.map(el => 
     `
-        <div class="swiper-slide">
-        <p class="text">${el.review}</p>
+        <div class="swiper-slide swiper-dark">
+        <p class="text text-dark">${el.review}</p>
         <div class="author-container">
             <img src="${el.avatar_url}" alt="">
-            <h3 class="author">${el.author}</h3>
+            <h3 class="author author-dark">${el.author}</h3>
         </div>
         </div>
     `
@@ -44,10 +44,10 @@ async function initSwiper() {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
     breakpoints: {
         320: { 
         slidesPerView: 1,
@@ -59,7 +59,7 @@ async function initSwiper() {
         },
         1280: { 
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 32
         }
     },
     centeredSlides: false, 
