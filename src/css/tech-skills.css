@@ -22,12 +22,12 @@
 }
 
 .second{
-    position: absolute;
+    position: relative;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    top: 135px;
-    left: -3px;
+    top: 10px;
+    left: 0;
     background-color: #E4E5E6;
     transform: rotate(2deg);
     z-index: -1;
