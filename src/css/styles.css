@@ -30,9 +30,47 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black: #292929;
+  --accent-green: #00B068;
+  --white: #F0F0F0;
+  --light-grey: #E4E5E6;
+  --light-accent: #BCDFD1;
+
+  --transition: 250ms ease-in-out;
 }
 
 @font-face {
-  font-family: 'Impact';
-  src: url('../css/fonts/impact.ttf') format('woff2');
+  font-family: 'Impact', Arial, sans-serif;
+  src: url('../css/fonts/impact.woff2') format('woff2'),
+       url('../css/fonts/impact.woff') format('woff');
 }
+
+.title {
+  font-family: 'Impact';
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
