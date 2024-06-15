@@ -10,15 +10,8 @@
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-.tech-skills-container {
+
+.first{
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -30,20 +23,21 @@
 
 .second{
     position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
     top: 135px;
     left: -3px;
     background-color: #E4E5E6;
     transform: rotate(2deg);
     z-index: -1;
-    fill:#292929;
+    padding: 40px 0;
+    color: #00B068;
 }
 
 .second .tech-skills-item::before{
     transform: translateY(+50%);
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M18.809 10.866l-4.92-0.172c-1.359-0.047-2.498 1.015-2.546 2.374l-0.172 4.92c-0.047 1.359 1.015 2.498 2.374 2.546l4.92 0.172c1.359 0.047 2.498-1.015 2.546-2.374l0.172-4.92c0.047-1.359-1.015-2.498-2.374-2.546z" fill="black"/></svg>');
-}
-.second .tech-skills-item{
-    color: #00B068;
 }
 .tech-skills-list {
     display: flex;
@@ -80,12 +74,17 @@
         background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%2300b068" d="M18.667 10.667h-5.333c-1.473 0-2.667 1.194-2.667 2.667v5.333c0 1.473 1.194 2.667 2.667 2.667h5.333c1.473 0 2.667-1.194 2.667-2.667v-5.333c0-1.473-1.194-2.667-2.667-2.667z"/></svg>') no-repeat center center;
         transform: translateY(+50%);
 }
-.tech-skills-container-dark{
+.first-dark{
     background-color: #214136;
     color: #F0F0F0;
     padding: 40px 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .second-dark{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 40px 0;
     background-color: #2A2D32;
     color: #14C57C;
     transform: rotate(2deg);
@@ -97,4 +96,14 @@
 .second-dark .tech-skills-item::before {
     transform: translateY(+50%);
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%23f0f0f0" style="fill: var(--color1, %23f0f0f0)" d="M18.809 10.866l-4.92-0.172c-1.359-0.047-2.498 1.015-2.546 2.374l-0.172 4.92c-0.047 1.359 1.015 2.498 2.374 2.546l4.92 0.172c1.359 0.047 2.498-1.015 2.546-2.374l0.172-4.92c0.047-1.359-1.015-2.498-2.374-2.546z"/></svg>');
+}
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
 }
