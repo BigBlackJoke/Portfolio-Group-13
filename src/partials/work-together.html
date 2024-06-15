@@ -30,17 +30,26 @@
             </address>
        </div>
         <form action="javascript:void(0)" class="work-together__form">
-            <input class="work-together__email" required type="email" name="email" id="email" placeholder="Your email*"
-                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+          <div class="work-together__input-wrapper">
+                <input class="work-together__email" required type="email" name="email" id="email" placeholder="Your email*"
+                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+                    <svg class="work-together__icon-success" width="24" height="24">
+                        <use href="../img/symbol-defs.svg#icon-ep_success-filled"></use>
+                    </svg>
+                    <p class="work-together__text-invalid">
+                        Invalid email, try again
+                    </p>
+                    
+          </div>
             <textarea class="work-together__message" name="message" id="textarea" cols="30" rows="4"
                 placeholder="Message"></textarea>
             <button class="work-together__button" type="submit" aria-label="Send">Send message</button>
         </form>
     </div>
-    <div class="work-together__backdrop">
+    <div class="work-together__backdrop active">
         <div class="work-together__modal modal">
             <svg class="modal__close" width="24" height="24">
-                <use href="../img/symbol-defs.svg#icon-close"></use>
+                <use href="../img/symbol-defs.svg#icon-x-1"></use>
             </svg>
             <p class="modal__title">
                 Thank you for your interest in cooperation!

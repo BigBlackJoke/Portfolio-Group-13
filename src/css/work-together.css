@@ -58,6 +58,10 @@
   height: 22px;
 }
 .work-together__form {
+  width: 100%;
+}
+.work-together__input-wrapper {
+  position: relative;
 }
 .work-together__email,
 .work-together__message {
@@ -72,6 +76,7 @@
   color: var(--black);
 }
 .work-together__email {
+  position: relative;
 }
 .work-together__message {
   min-height: 128px;
@@ -88,8 +93,36 @@
 .work-together__email:not(:placeholder-shown):invalid {
   color: #e74a3b;
 }
-.work-together__email:not(:placeholder-shown):valid {
-  /* border-color: #3cbc81 */
+
+.work-together__text-invalid {
+  opacity: 0;
+  position: absolute;
+  bottom: 12px;
+  
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+
+  transition: opacity var(--transition);
+}
+.work-together__email:not(:placeholder-shown):invalid~.work-together__text-invalid {
+  opacity: 1;
+}
+.work-together__icon-success {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--light-grey);
+  opacity: 0;
+
+  transition: opacity var(--transition);
+}
+.work-together__email:not(:placeholder-shown):valid~.work-together__icon-success {
+  opacity: 1;
 }
 .work-together__button {
   display: block;
@@ -127,6 +160,7 @@
   z-index: 100;
   background: rgba(41, 41, 41, 0.8);
   opacity: 0;
+  transform: translateX(-100%);
   pointer-events: none;
 
   transition: opacity var(--transition),
@@ -134,13 +168,14 @@
 }
 .work-together__backdrop.active {
   width: 100%;
+  transform: translateX(0);
   opacity: 1;
   transition: opacity var(--transition),
-              width var(--transition);
+              transform var(--transition);
   pointer-events: all;
 }
 .work-together__modal {
-  width: 320px;
+  max-width: 320px;
 }
 .modal {
   position: relative;
@@ -155,6 +190,7 @@
   top: 16px;
   right: 16px;
   cursor: pointer;
+  stroke: var(--black);
 }
 .modal__title {
   font-size: 20px;
@@ -208,7 +244,7 @@
   .work-together__backdrop {
   }
   .work-together__modal {
-    width: 492px;
+    max-width: 492px;
   }
   .modal {
     padding: 64px 64px;
@@ -243,5 +279,8 @@
   .work-together__address {
     flex-direction: column;
     margin-bottom: 0;
+  }
+  .work-together__email {
+    width: 100%;
   }
 }
