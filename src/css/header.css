@@ -1,13 +1,5 @@
-:root {
-  --color-primary: #00b068;
-}
-
 .color-primary {
-  color: var(--color-primary);
-}
-
-body {
-  margin: 0 auto;
+  color: var(--accent-green);
 }
 
 .header {

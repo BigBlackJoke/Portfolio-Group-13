@@ -1,14 +1,3 @@
-.projects-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.projects-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
 
 .projects-title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -113,16 +102,6 @@
 
 
 @media screen and (min-width: 768px) {
-    .projects-section {
-        padding-top: 62px;
-        padding-bottom: 62px;
-    }
-
-    .projects-container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
     .projects-title {
         font-size: 108px;
         line-height: 1.15;
@@ -167,15 +146,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .projects-section {
-        padding-top: 82px;
-        padding-bottom: 82px;
-    }
 
-    .projects-container {
-        max-width: 1280px;
-        padding: 0 136px;
-    }
 
     .projects-title {
         margin-bottom: 80px;
@@ -183,6 +154,8 @@
 
     .image-list {
         gap: 80px;
+        justify-content: center;
+        align-items: center;
    }
 
    .image-list > .image-item:last-child {

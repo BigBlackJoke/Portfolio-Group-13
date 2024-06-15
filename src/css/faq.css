@@ -2,25 +2,6 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 340px;
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-}
-
-@media screen and (min-width:768px) {
-    .container{
-      max-width: 768px;
-      padding: 0 32px 0 32px;
-    }
-}
-@media screen and (min-width:1280px) {
-    .container{
-      max-width: 1280px;
-      padding: 0 32px 0 32px;
-    }
-}
-
 .title-2{
     font-family: Impact;
     font-size: 52px;
@@ -67,11 +48,6 @@
 .ac-trigger:focus {
     outline: none;
 }
-
-.faq-section{
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
 .faq-decor{
     display: none;
 }
@@ -82,11 +58,6 @@
     font-weight: 400;
     line-height: 124px;
     margin-bottom: 60px;
-    }
-
-    .faq-section{
-        margin-bottom: 124px;
-        margin-top: 124px;
     }
 }
 

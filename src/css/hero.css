@@ -1,8 +1,7 @@
-.container {
-    /* padding: 0 20px;
-    width: 100%;
-    max-width: 375px; */
-    position: relative;
+.container-hero {
+    margin: 0 auto;
+    padding: 112px 20px 0 20px;
+    /* position: relative; */
 }
 
 .background-decorative {
@@ -38,7 +37,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000000;
-    padding-top: 96px;
 }
 
 .dark .hero-title {
@@ -51,13 +49,11 @@
 
 .order-container {
     margin-top: 40px;
-    /* margin-left: 72px; */
-    padding: 32px 0;
     max-width: 320px;
     display: flex;
     gap: 12px;
     position: relative;
-
+    height: 92px;
     align-items: center;
 }
 
@@ -86,7 +82,6 @@
 .decorative {
     background: rgba(0, 176, 104, 0.2);
     border-radius: 16px;
-    /* width: 165px; */
     width: 135px;
     height: 92px;
     left: 155px;
@@ -114,9 +109,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #000000;
-    padding-bottom: 56px;
 
-    max-width: 320px;
     height: auto;
 
     margin-top: 40px;
@@ -133,7 +126,6 @@
 .social-links {
     background-color: #E4E5E6;
     margin-top: 12px;
-    /* min-width: 375px; */
     min-width: 320px;
     margin: 0 auto;
 }
@@ -147,6 +139,7 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    margin-top: 72px;
 
     padding: 32px 0;
 }
@@ -186,6 +179,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .container-hero {
+        padding: 88px 32px 0 32px;
+    }
+
     .background-1 {
         width: 356px;
         height: 276px;
@@ -203,8 +200,6 @@
         font-size: 136px;
         line-height: 1.15;
         letter-spacing: 0.01em;
-
-        padding-top: 88px;
     }
 
     .order-container {
@@ -228,7 +223,6 @@
         font-size: 20px;
         line-height: 1.60;
         width: 704px;
-        padding-bottom: 64px;
     }
 
     .social-links {
@@ -248,10 +242,6 @@
 
 @media screen and (min-width: 1280px) {
     
-    .container {
-        min-width: 1280px;
-    }
-
     .background-1 {
         top: 500px;
         left: 150px;
@@ -275,7 +265,7 @@
         display: flex;
         gap: 72px;
         align-items: center;
-        padding-top: 72px;
+        justify-content: center;
     }
 
     .hero-img {
@@ -286,6 +276,10 @@
         background-repeat: no-repeat;
         border-radius: 32px;
         z-index: 1;
+    }
+
+    .social-links-list {
+        margin-top: 132px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -301,7 +295,7 @@
         gap: 303px;
         align-items: center;
         margin-top: 80px;
-        padding-bottom: 80px;
+        justify-content: center;
     }
 
     .order-container {
