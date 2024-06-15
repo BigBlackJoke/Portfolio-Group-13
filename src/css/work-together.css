@@ -1,30 +1,3 @@
-Common styles
-* {
-  box-sizing: border-box;
-}
-:root {
-  --black: #292929;
-  --accent-green: #00b068;
-  --white: #f0f0f0;
-  --light-grey: #e4e5e6;
-  --light-accent: #bcdfd1;
-}
-.container {
-  flex-direction: column;
-  align-items: start;
-}
-.header-nav {
-  display: none;
-}
-/* Common classes */
-.title {
-  font-family: 'Impact';
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--black);
-}
-
 .work-together {
   padding: 80px 0;
 }
@@ -52,13 +25,26 @@ Common styles
   row-gap: 16px;
   margin-bottom: 40px;
 }
+.work-together__icon-wrapper {
+  display: flex;
+  column-gap: 16px;
+}
+.work-together__icon {
+  stroke: var(--accent-green);
+  fill: transparent;
+}
 .work-together__phone,
 .work-together__mail,
 .work-together__location {
-  position: relative;
-  padding-left: 40px;
   font-weight: 300;
   font-style: normal;
+
+  transition: color var(--transition);
+}
+.work-together__phone:hover,
+.work-together__mail:hover,
+.work-together__location:hover {
+  color: var(--accent-green);
 }
 .work-together__phone::before,
 .work-together__mail::before,
@@ -71,15 +57,6 @@ Common styles
   width: 22px;
   height: 22px;
 }
-.work-together__phone::before {
-  background: url('../img/icons/icon-phone.svg') no-repeat;
-}
-.work-together__location::before {
-  background: url('../img/icons/icon-location.svg') no-repeat;
-}
-.work-together__mail::before {
-  background: url('../img/icons/icon-mail.svg') no-repeat;
-}
 .work-together__form {
 }
 .work-together__email,
@@ -88,7 +65,7 @@ Common styles
   padding: 16px;
   height: 48px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   background-color: var(--light-grey);
   margin-bottom: 32px;
@@ -107,6 +84,12 @@ Common styles
   line-height: 150%;
   letter-spacing: 0.03em;
   color: rgba(41, 41, 41, 0.4);
+}
+.work-together__email:not(:placeholder-shown):invalid {
+  color: #e74a3b;
+}
+.work-together__email:not(:placeholder-shown):valid {
+  /* border-color: #3cbc81 */
 }
 .work-together__button {
   display: block;
@@ -128,4 +111,137 @@ Common styles
 }
 .work-together__button:hover {
   background-color: #009156;
+}
+
+/* Modal window */
+
+.work-together__backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(41, 41, 41, 0.8);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--transition),
+              width var(--transition);
+}
+.work-together__backdrop.active {
+  width: 100%;
+  opacity: 1;
+  transition: opacity var(--transition),
+              width var(--transition);
+  pointer-events: all;
+}
+.work-together__modal {
+  width: 320px;
+}
+.modal {
+  position: relative;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 16px;
+  padding: 48px 32px;
+  opacity: 1;
+  background: var(--white);
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.modal__title {
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-green);
+  margin-bottom: 16px;
+}
+.modal__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width:360px) {
+  
+}
+
+@media screen and (min-width:768px) {
+  .work-together {
+    padding: 124px 0;
+  }
+  .work-together {
+    background-image: url('../img/decor-1.png');
+    background-repeat: no-repeat;
+    background-position: top 20px left 75%;
+  }
+  .work-together__title {
+    margin-bottom: 60px;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+  .work-together__text {
+    font-size: 20px;
+    line-height: 160%;
+  }
+  .work-together__address {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-bottom: 60px;
+  }
+  .work-together__button {
+    width: unset;
+  }
+  .work-together__backdrop {
+  }
+  .work-together__modal {
+    width: 492px;
+  }
+  .modal {
+    padding: 64px 64px;
+  }
+  .modal__close {
+    top: 20px;
+    right: 20px;
+  }
+  .modal__title {
+  }
+  .modal__text {
+  }
+
+}
+
+@media screen and (min-width:1280px) {
+  .work-together .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 117px;
+  }
+  .work-together__wrapper {
+    max-width: 610px;
+  }
+  .work-together__title {
+    margin-bottom: 80px;
+  }
+  .work-together__text {
+    margin-bottom: 120px;
+  }
+  .work-together__address {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
