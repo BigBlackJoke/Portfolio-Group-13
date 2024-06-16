@@ -4,6 +4,12 @@
     padding: 0 20px;
 }
 
+.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .title-dark {
     font-family: "Impact", sans-serif;
     font-weight: 400;
