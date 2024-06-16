@@ -1,37 +1,27 @@
-export const tester = 'Ok';
-
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 export function handleForm() {
-  console.log('Form initialisation');
-
   const contactForm = document.querySelector(".work-together__form");
-
   contactForm.addEventListener("submit", handleSubmit);
-
   function handleSubmit(event) {
     event.preventDefault();
-
     const email = event.target.email.value;
     const message = event.target.message.value;
     const url = "https://portfolio-js.b.goit.study/api/requests";
     const requestData = {
       email: email,
-      message: message,
+      comment: message,
     };
-    console.log(requestData);
-
+    const modal = document.querySelector('.work-together__backdrop');
+    const closeModalBtn = document.querySelector('.modal__close');
     fetch(url, {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json",
-      // },
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(requestData),
-      // body: {
-      //   "email": "tototo@gmail.com",
-      //   "comment": "User's comment"
-      // },
     })
       .then((response) => {
-        console.table("response", response);
         if (!response.ok) {
           console.log(response.statusText);
           throw new Error("Network response was not ok");
@@ -39,21 +29,21 @@ export function handleForm() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
-
-        showModal("Request created successfully!");
-
+        modal.classList.add('active');
+        closeModalBtn.addEventListener('click', () => {
+          modal.classList.remove('active');
+        });
         contactForm.reset();
       })
       .catch((error) => {
-        console.log("Error:", error);
-        showModal(error);
+        iziToast.error({
+          title: 'Error',
+          message: error.message,
+          backgroundColor: '#de4f69',
+          iconColor: '#ffffff',
+          messageColor: '#fff',
+        });
       });
   }
-
-  function showModal(message) {
-    alert(message);
-  }
 }
-
 handleForm();
