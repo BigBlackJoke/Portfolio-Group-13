@@ -4,12 +4,6 @@
     padding: 0 20px;
 }
 
-.swiper-button-disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
 .title-dark {
     font-family: "Impact", sans-serif;
     font-weight: 400;
@@ -51,11 +45,11 @@
     border-radius: 16px;
     padding: 32px;
     width: 320px;
-    /* min-height: 296px; */
+    min-height: 440px;
+    /*------*/
     box-sizing: border-box;
     background: #2A2D32;
     margin-bottom: 24px;
-    /* position: relative; */
 }
 
 .swiper-slide {
@@ -65,11 +59,9 @@
     padding: 32px;
     width: 320px;
     min-height: 440px;
-    /*?????*/
     box-sizing: border-box;
     background: #E4E5E6;
     margin-bottom: 24px;
-    /* position: relative; */
 }
 
 .swiper-slide p.text-dark {
@@ -81,7 +73,6 @@
     color: #F0F0F0;
     margin-bottom: 24px;
 }
-
 
 .swiper-slide p.text {
     font-family: "Poppins", sans-serif;
@@ -99,9 +90,7 @@
     text-align: center;
     align-items: center;
     position: absolute;
-    /*?????*/
     bottom: 32px;
-    /*?????*/
 }
 
 .swiper-slide h3.author-dark {
@@ -160,16 +149,15 @@
     width: 40px;
     height: 40px;
     padding: 8px;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .swiper-icon-disabled {
     fill: none;
     stroke: #2929291A;
 }
-
-
-
-
 
 /* -------------768-------------------- */
 @media screen and (min-width: 768px) {
@@ -197,22 +185,7 @@
         position: absolute;
         bottom: 32px;
     }
-
-    .button-next {
-        width: 24px;
-        height: 24px;
-        color: #292929;
-    }
-
-    .button-prev {
-        width: 24px;
-        height: 24px;
-        color: #292929;
-    }
 }
-
-
-
 
 /* -------------1280-------------------- */
 @media screen and (min-width: 1280px) {
@@ -234,15 +207,20 @@
         width: 592px;
     }
 
-    .button-next {
-        width: 24px;
-        height: 24px;
-        color: #292929;
+    .btn-container {
+        gap: 24px;
     }
 
+    .button-next,
     .button-prev {
-        width: 24px;
-        height: 24px;
-        color: #292929;
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .swiper-button-disabled {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
     }
 }
