@@ -241,8 +241,6 @@
   .work-together__button {
     width: unset;
   }
-  .work-together__backdrop {
-  }
   .work-together__modal {
     max-width: 492px;
   }
@@ -253,11 +251,6 @@
     top: 20px;
     right: 20px;
   }
-  .modal__title {
-  }
-  .modal__text {
-  }
-
 }
 
 @media screen and (min-width:1280px) {
