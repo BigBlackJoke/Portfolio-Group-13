@@ -2,6 +2,7 @@ import axios from 'axios';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+
 async function getApi() {
     const BASE_URL = 'https://portfolio-js.b.goit.study/api';
     const END_POINT = '/reviews';
@@ -38,16 +39,12 @@ async function initSwiper() {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     swiperWrapper.innerHTML = markup;
     
-    new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swiper-container', {
         loop: true,
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
         },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
     breakpoints: {
         320: { 
         slidesPerView: 1,
@@ -72,25 +69,31 @@ async function initSwiper() {
 
     updateNavigationButtons(swiper);
     } catch (error) {
-        console.error(error);
+        console.log(error);
     }
 }
 
 function updateNavigationButtons(swiper) {
     const { isBeginning, isEnd } = swiper;
-    const prevButton = document.querySelector('.swiper-button-prev');
-    const nextButton = document.querySelector('.swiper-button-next');
+    const prevButton = document.querySelector('.button-prev');
+    const nextButton = document.querySelector('.button-next');
+    const prevIcon = document.querySelector('.icon-prev');
+    const nextIcon = document.querySelector('.icon-next');
     
     if (isBeginning) {
     prevButton.classList.add('swiper-button-disabled');
+    prevIcon.classList.add('swiper-icon-disabled');
     } else {
     prevButton.classList.remove('swiper-button-disabled');
+    prevIcon.classList.remove('swiper-icon-disabled');
     }
     
     if (isEnd) {
     nextButton.classList.add('swiper-button-disabled');
+    nextIcon.classList.add('swiper-icon-disabled');
     } else {
     nextButton.classList.remove('swiper-button-disabled');
+    nextIcon.classList.remove('swiper-icon-disabled');
     }
 }
 
