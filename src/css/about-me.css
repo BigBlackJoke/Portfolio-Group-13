@@ -133,7 +133,7 @@
         right: 4px;
         width: 336px;
         height: 252px;
-        background-image: url(../img/about-me/decor_bg_tab.png);
+        background-image: url(./img/about-me/decor_bg_tab.png);
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
@@ -191,7 +191,7 @@
         right: 14px;
         width: 380px;
         height: 260px;
-        background-image: url(../img/about-me/decor_bg_desk.png);
+        background-image: url(./img/about-me/decor_bg_desk.png);
     }
 
     /* =============================== */
