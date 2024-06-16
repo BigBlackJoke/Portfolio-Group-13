@@ -1,6 +1,8 @@
 import axios from 'axios';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 
 async function getApi() {
@@ -40,7 +42,7 @@ async function initSwiper() {
     swiperWrapper.innerHTML = markup;
     
     const swiper = new Swiper('.swiper-container', {
-        loop: true,
+        loop: false,
         navigation: {
         nextEl: '.button-next',
         prevEl: '.button-prev',
@@ -61,6 +63,10 @@ async function initSwiper() {
     },
     centeredSlides: false, 
     slidesPerView: 'auto', 
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     });
 
     swiper.on('slideChange', function () {
@@ -69,7 +75,11 @@ async function initSwiper() {
 
     updateNavigationButtons(swiper);
     } catch (error) {
-        console.log(error);
+        iziToast.error({
+            title: 'Error',
+            message: 'Not found',
+            position: 'topRight'
+        });
     }
 }
 
