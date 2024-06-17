@@ -1,21 +1,3 @@
-.container {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.title-dark {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #F0F0F0;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .dark-mode .review-title, .dark-mode .swiper-slide p.text, .dark-mode .swiper-slide h3.author {
     color: #fff;
 }
@@ -47,19 +29,6 @@
     display: flex;
 }
 
-.swiper-dark {
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    padding: 32px;
-    width: 320px;
-    min-height: 440px;
-    /*------*/
-    box-sizing: border-box;
-    background: #2A2D32;
-    margin-bottom: 24px;
-}
-
 .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -69,16 +38,6 @@
     min-height: 440px;
     box-sizing: border-box;
     background: #E4E5E6;
-    margin-bottom: 24px;
-}
-
-.swiper-slide p.text-dark {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.50;
-    letter-spacing: 0.03em;
-    color: #F0F0F0;
     margin-bottom: 24px;
 }
 
@@ -99,15 +58,6 @@
     align-items: center;
     position: absolute;
     bottom: 32px;
-}
-
-.swiper-slide h3.author-dark {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.50;
-    letter-spacing: 0.03em;
-    color: #F0F0F0;
 }
 
 .swiper-slide h3.author {
@@ -169,11 +119,6 @@
 
 /* -------------768-------------------- */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
     .review-title {
         font-weight: 400;
         font-size: 108px;
@@ -197,10 +142,6 @@
 
 /* -------------1280-------------------- */
 @media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-
     .review-title {
         font-weight: 400;
         font-size: 108px;
