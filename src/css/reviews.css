@@ -1,22 +1,12 @@
-.container{
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 0 20px;
+.dark-mode .review-title, .dark-mode .swiper-slide p.text, .dark-mode .swiper-slide h3.author {
+    color: #fff;
 }
 
-.title-dark{
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #F0F0F0;
-    text-align: center;
-    margin-bottom: 40px;
+.dark-mode .swiper-slide {
+    background-color: #2A2D32;
 }
 
-.review-title{
+.review-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
@@ -39,42 +29,17 @@
     display: flex;
 }
 
-.swiper-dark{
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    padding: 32px;
-    width: 320px;
-    /* min-height: 296px; */
-    box-sizing: border-box;
-    background: #2A2D32;
-    margin-bottom: 24px;
-    /* position: relative; */
-}
-
 .swiper-slide {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
     padding: 32px;
     width: 320px;
-    /* min-height: 296px; */
+    min-height: 440px;
     box-sizing: border-box;
     background: #E4E5E6;
     margin-bottom: 24px;
-    /* position: relative; */
 }
-
-.swiper-slide p.text-dark {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.50;
-    letter-spacing: 0.03em;
-    color: #F0F0F0;
-    margin-bottom: 24px;
-}
-
 
 .swiper-slide p.text {
     font-family: "Poppins", sans-serif;
@@ -86,22 +51,13 @@
     margin-bottom: 24px;
 }
 
-.author-container{
+.author-container {
     display: flex;
     gap: 16px;
     text-align: center;
     align-items: center;
-    /* position: absolute;
-    bottom: 32px; */
-}
-
-.swiper-slide h3.author-dark {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.50;
-    letter-spacing: 0.03em;
-    color: #F0F0F0;
+    position: absolute;
+    bottom: 32px;
 }
 
 .swiper-slide h3.author {
@@ -120,34 +76,50 @@
     object-fit: cover;
 }
 
-/* #button-next {
-    width: 24px;
-    height: 24px;
-    color: #292929;
+.btn-container {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
 }
 
-#button-prev {
-    width: 24px;
-    height: 24px;
-    color: #292929;
-} */
+.button-next,
+.button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #2929294D;
+    padding: 8px;
+}
 
-/* :root {
-    --swiper-navigation-size: 24px;
-} */
+.icon-prev {
+    fill: none;
+    stroke: #292929;
+}
 
+.icon-next {
+    stroke: #292929;
+    fill: none;
+}
 
+.swiper-button-disabled {
+    border: 1px solid #2929291A;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
 
-
+.swiper-icon-disabled {
+    fill: none;
+    stroke: #2929291A;
+}
 
 /* -------------768-------------------- */
-@media screen and (min-width: 768px){
-    .container{
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
-    .review-title{
+@media screen and (min-width: 768px) {
+    .review-title {
         font-weight: 400;
         font-size: 108px;
         line-height: 1.15;
@@ -162,34 +134,15 @@
         position: relative;
     }
 
-    .author-container{
+    .author-container {
         position: absolute;
         bottom: 32px;
     }
-    
-    .button-next {
-        width: 24px;
-        height: 24px;
-        color: #292929;
-    }
-    
-    .button-prev {
-        width: 24px;
-        height: 24px;
-        color: #292929;
-    }
 }
 
-
-
-
 /* -------------1280-------------------- */
-@media screen and (min-width: 1280px){
-    .container{
-        max-width: 1280px;
-    }
-    
-    .review-title{
+@media screen and (min-width: 1280px) {
+    .review-title {
         font-weight: 400;
         font-size: 108px;
         line-height: 1.15;
@@ -203,19 +156,20 @@
         width: 592px;
     }
 
-    .button-next {
-        width: 24px;
-        height: 24px;
-        color: #292929;
+    .btn-container {
+        gap: 24px;
     }
-    
+
+    .button-next,
     .button-prev {
-        width: 24px;
-        height: 24px;
-        color: #292929;
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .swiper-button-disabled {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
     }
 }
-
-
-
-

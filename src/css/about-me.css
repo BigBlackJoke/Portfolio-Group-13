@@ -1,217 +1,226 @@
-.cont-about-me {
-    width: 320px;
-    padding: 40px 20px;
-    margin: 0 auto;
-
+.title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 40px;
 }
 
-.title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 40px;
+.dark-mode .title,
+.dark-mode .title-three,
+.dark-mode .skills-list-text,
+.dark-mode .education-role-text {
+  color: #fff;
 }
 
 .title-span {
-    color: #00b068;
+  color: #00b068;
 }
 
 .cont-img-bio {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.img-about-me {
-    margin-bottom: 40px;
+.cont-image {
+  border-radius: 17px;
+  overflow: hidden;
+  margin-bottom: 40px;
 }
+
+/* .img-about-me {
+    margin-bottom: 40px;
+} */
 
 .title-three {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 32px;
 }
 
 .skills-list-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
 }
 
 .cont-bio li:not(:last-child) {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .cont-education {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .cont-education li:not(:last-child) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .li-item {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .icon-about {
-    flex-shrink: 0;
-    border-radius: 1px;
+  flex-shrink: 0;
+  border-radius: 1px;
 }
 
 .education-role-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
 }
 
 .icon-about-second {
-    flex-shrink: 0;
-    border-radius: 1px;
-    align-self: center;
-    margin: 10px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  align-self: center;
+  margin: 10px;
 }
 
 .last-three {
-    margin: 10px 6px;
+  margin: 10px 6px;
 }
 
 .cont-role li:not(:last-child) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 /* =============== min-width: 768px ================ */
 
 @media screen and (min-width: 768px) {
-    .cont-about-me {
-        width: 768px;
-        padding: 62px 32px;
-    }
+  .cont-about-me {
+    width: 768px;
+    padding: 62px 32px;
+  }
 
-    .title {
-        font-size: 108px;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-    }
+  .title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
 
-    .img-about-me {
-        width: 336px;
-        margin-bottom: 0;
-    }
+  .cont-image {
+    margin-bottom: 0;
+  }
 
-    .title-three {
-        font-size: 36px;
-        line-height: 1.33;
-        letter-spacing: 0.01em;
-    }
+  .img-about-me {
+    width: 336px;
+  }
 
-    .cont-img-bio {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        align-items: end;
-        margin-bottom: 60px;
-    }
+  .title-three {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
 
-    .cont-bio {
-        width: 336px;
-        padding-bottom: 80px;
-    }
+  .cont-img-bio {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: end;
+    margin-bottom: 60px;
+  }
 
-    .background-image {
-        position: relative;
-    }
+  .cont-bio {
+    width: 336px;
+    padding-bottom: 80px;
+  }
 
-    .background-image::after {
-        content: '';
-        position: absolute;
-        top: 2px;
-        right: 4px;
-        width: 336px;
-        height: 252px;
-        background-image: url('../img/about-me/decor_bg_tab.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
+  .background-image {
+    position: relative;
+  }
 
-    /* =============================== */
-    .cont-education-role {
-        display: flex;
-        justify-content: space-between;
-        /* gap: 32px; */
-    }
+  .background-image::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 336px;
+    height: 252px;
+    background-image: url(../img/decor-bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 
-    .cont-education {
-        width: 336px;
-        margin-bottom: 0;
-    }
+  /* =============================== */
+  .cont-education-role {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 32px; */
+  }
 
-    .cont-education li:not(:last-child) {
-        margin-bottom: 16px;
-    }
+  .cont-education {
+    width: 336px;
+    margin-bottom: 0;
+  }
 
-    .cont-role {
-        width: 336px;
-    }
+  .cont-education li:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-    .cont-role li:not(:last-child) {
-        margin-bottom: 16px;
-    }
+  .cont-role {
+    width: 336px;
+  }
+
+  .cont-role li:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 /* ============== min-width: 1280px ================= */
 
 @media screen and (min-width: 1280px) {
-    .cont-about-me {
-        width: 1280px;
-        padding: 82px 32px;
-    }
+  .cont-about-me {
+    width: 1280px;
+    padding: 82px 32px;
+  }
 
-    .img-about-me {
-        width: 384px;
-    }
+  .img-about-me {
+    width: 384px;
+  }
 
-    .cont-img-bio {
-        margin-bottom: 80px;
-        padding-left: 208px;
-    }
+  .cont-img-bio {
+    margin-bottom: 80px;
+    padding-left: 208px;
+  }
 
-    .cont-bio {
-        width: 488px;
-        padding-bottom: 232px;
-    }
+  .cont-bio {
+    width: 488px;
+    padding-bottom: 232px;
+  }
 
-    .background-image::after {
-        top: 40px;
-        right: 14px;
-        width: 380px;
-        height: 260px;
-        background-image: url('../img/about-me/decor_bg_desk.png');
-    }
+  .background-image::after {
+    top: 40px;
+    right: 14px;
+    width: 380px;
+    height: 260px;
+    background-image: url(../img/decor-bg2.png);
+  }
 
-    /* =============================== */
-    .cont-education-role {
-        padding-left: 208px;
-        padding-right: 102px;
-    }
+  /* =============================== */
+  .cont-education-role {
+    padding-left: 208px;
+    padding-right: 102px;
+  }
 
-    .cont-education {
-        width: 384px;
-    }
+  .cont-education {
+    width: 384px;
+  }
 
-    .cont-role {
-        width: 384px;
-    }
+  .cont-role {
+    width: 384px;
+  }
 }

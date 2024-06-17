@@ -1,37 +1,37 @@
 const arr = [
     {
-        src: "../img/My-project/js-jpg/energy.jpg",
-        retina: "../img/My-project/js-jpg/energy-2x.jpg",
+        src: "./img/My-project/js-jpg/energy.jpg",
+        retina: "./img/My-project/js-jpg/energy-2x.jpg",
         alt: "Energy Flow Webservice"
     },
     {
-        src: "../img/My-project/js-jpg/fruitbox.jpg",
-        retina: "../img/My-project/js-jpg/fruitbox-2x.jpg",
+        src: "./img/My-project/js-jpg/fruitbox.jpg",
+        retina: "./img/My-project/js-jpg/fruitbox-2x.jpg",
         alt: "fruitbox online store"
     },
     {
-        src: "../img/My-project/js-jpg/jewelry.jpg",
-        retina: "../img/My-project/js-jpg/jewelry-2x.jpg",
+        src: "./img/My-project/js-jpg/jewelry.jpg",
+        retina: "./img/My-project/js-jpg/jewelry-2x.jpg",
         alt: "chego jewelry website"
     },
     {
-        src: "../img/My-project/js-jpg/mimino.jpg",
-        retina: "../img/My-project/js-jpg/mimino-2x.jpg",
+        src: "./img/My-project/js-jpg/mimino.jpg",
+        retina: "./img/My-project/js-jpg/mimino-2x.jpg",
         alt: "mimino website"
     },
     {
-        src: "../img/My-project/js-jpg/power.jpg",
-        retina: "../img/My-project/js-jpg/power-2x.jpg",
+        src: "./img/My-project/js-jpg/power.jpg",
+        retina: "./img/My-project/js-jpg/power-2x.jpg",
         alt: "power pulse webservice"
     },
     {
-        src: "../img/My-project/js-jpg/starlight.jpg",
-        retina: "../img/My-project/js-jpg/starlight-2x.jpg",
+        src: "./img/My-project/js-jpg/starlight.jpg",
+        retina: "./img/My-project/js-jpg/starlight-2x.jpg",
         alt: "starlight studio landing page"
     },
     {
-        src: "../img/My-project/js-jpg/vyshyvanka.jpg",
-        retina: "../img/My-project/js-jpg/vyshyvanka-2x.jpg",
+        src: "./img/My-project/js-jpg/vyshyvanka.jpg",
+        retina: "./img/My-project/js-jpg/vyshyvanka-2x.jpg",
         alt: "vyshyvanka vibes Landing Page"
     },
 ]

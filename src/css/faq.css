@@ -2,25 +2,6 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 340px;
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-}
-
-@media screen and (min-width:768px) {
-    .container{
-      max-width: 768px;
-      padding: 0 32px 0 32px;
-    }
-}
-@media screen and (min-width:1280px) {
-    .container{
-      max-width: 1280px;
-      padding: 0 32px 0 32px;
-    }
-}
-
 .title-2{
     font-family: Impact;
     font-size: 52px;
@@ -37,13 +18,22 @@
     color:rgba(0, 176, 104, 1);
 }
 
+.dark-mode .title-2, .dark-mode .ac .ac-trigger, .dark-mode .ac .ac-panel .ac-text {
+    color: #fff;
+}
+
+.dark-mode .ac {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid #2A2D32;
+}
+
 .ac{
-    
     border: none;
-    border-bottom: 1px solid rgba(204, 204, 204, 1);;
+    border-bottom: 1px solid rgba(204, 204, 204, 1);
 }
 .ac-header .ac-trigger{
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -52,7 +42,7 @@
 }
 
 .ac .ac-panel .ac-text{
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -67,11 +57,6 @@
 .ac-trigger:focus {
     outline: none;
 }
-
-.faq-section{
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
 .faq-decor{
     display: none;
 }
@@ -82,11 +67,6 @@
     font-weight: 400;
     line-height: 124px;
     margin-bottom: 60px;
-    }
-
-    .faq-section{
-        margin-bottom: 124px;
-        margin-top: 124px;
     }
 }
 

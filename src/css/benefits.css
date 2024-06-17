@@ -1,9 +1,3 @@
-.benefits {
-  max-width: 360px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
 .benefits-head {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -25,6 +19,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.dark-mode .benefits-head, .dark-mode .benefits-head-text, .dark-mode .benefits-text {
+  color: #fff;
 }
 
 .benefits-wrapper {
@@ -62,11 +60,6 @@
 
 /**-------------------768--------------------*/
 @media screen and (min-width: 768px) {
-  .benefits {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 62px 32px;
-  }
 
   .benefits-head {
     font-size: 108px;
@@ -93,19 +86,13 @@
     font-size: 20px;
     line-height: 1.6;
   }
-
-  .benefits-text {
-  }
 }
 
 /**-------------------1280--------------------*/
 
 @media screen and (min-width: 1280px) {
   .benefits {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 82px 32px;
-    background-image: url(/img/background.png);
+    background-image: url(../img/decor-bg2.png);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 526px 408px;
@@ -116,9 +103,6 @@
     line-height: 1.14815;
     letter-spacing: 0.02em;
     margin-bottom: 0;
-  }
-
-  .benefits-head-green {
   }
 
   .benefits-menu {
@@ -138,8 +122,5 @@
   .benefits-head-text {
     font-size: 20px;
     line-height: 1.6;
-  }
-
-  .benefits-text {
   }
 }

@@ -1,13 +1,9 @@
-:root {
-  --color-primary: #00b068;
-}
-
 .color-primary {
-  color: var(--color-primary);
+  color: var(--accent-green);
 }
 
-body {
-  margin: 0 auto;
+:root {
+  --color-primary: #00B068;
 }
 
 .header {
@@ -110,8 +106,8 @@ body {
   top: var(--header-h);
   right: -450px;
   background-color: var(--bg-color);
-  background-image: url(../img/header/Green\ dots1.png),
-    url(../img/header/Green\ dots2.png);
+  background-image: url(./img/header/Green\ dots1.png),
+    url(./img/header/Green\ dots2.png);
   background-repeat: no-repeat;
   background-position-x: 10px, 150px;
   background-position-y: 70px, 550px;
