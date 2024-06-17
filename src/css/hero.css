@@ -12,13 +12,20 @@
 }
 
 .background-1 {
-    top: 410px;
-    left: 150px;
+    /* top: 410px;
+    left: 150px; */
+    left: 135px;
 }
 
 .background-2 {
-    top: 10px;
-    left: -60px;
+    /* top: 10px;
+    left: -60px; */
+    top: 40px;
+    bottom: 30px;
+    left: 20px;
+    margin-top: -110px;
+    margin-left: 130px;
+    rotate: 60deg;
 }
 
 .main-content {
@@ -40,7 +47,10 @@
     color: #000000;
 }
 
-.dark-mode .hero-title, .dark-mode .link-to-order, .dark-mode .hero-article, .dark-mode .social-links-item a {
+.dark-mode .hero-title,
+.dark-mode .link-to-order,
+.dark-mode .hero-article,
+.dark-mode .social-links-item a {
     color: #fff;
 }
 
@@ -191,14 +201,22 @@
     .background-1 {
         width: 356px;
         height: 276px;
-        top: 520px;
+        /* top: 520px;
         rotate: 90deg;
-        left: 180px;
+        left: 180px; */
+        top: -170px;
+        left: 140px;
+        rotate: 90deg;
     }
 
     .background-2 {
-        left: 412px;
-        top: 30px;
+        width: 356px;
+        height: 276px;
+        /* left: 412px;
+        top: 30px; */
+        left: 220px;
+        top: 10px;
+        rotate: 30deg;
     }
 
     .hero-title {
@@ -248,15 +266,17 @@
 @media screen and (min-width: 1280px) {
     
     .background-1 {
-        top: 500px;
+        /* top: 500px;
         left: 150px;
-        rotate: 80deg;
+        rotate: 80deg; */
+        left: 140px;
+        z-index: 1;
     }
 
     .background-2 {
-        top: -40px;
-        left: 800px;
-        rotate: 35deg;
+        top: -120px;
+        left: 200px;
+        rotate: 12deg;
     }
 
     .hero-title {
@@ -270,7 +290,14 @@
         display: flex;
         gap: 72px;
         align-items: center;
-        justify-content: center;
+        justify-content: center;position: relative;
+    }
+
+    .class1 {
+        position: absolute;
+        z-index: 1;
+        width: 250px;
+        height: 170px;
     }
 
     .hero-img {
@@ -280,7 +307,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 32px;
-        z-index: 1;
+        z-index: 2;
+        position: relative;
     }
 
     .social-links-list {
