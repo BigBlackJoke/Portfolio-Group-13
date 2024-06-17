@@ -124,6 +124,15 @@
     justify-content: end;
 }
 
+.prev-dark-btn,
+.next-dark-btn{
+    border: 1px solid #2a2d32;
+    border-radius: 8px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
 .button-next,
 .button-prev {
     width: 40px;
@@ -131,6 +140,12 @@
     border-radius: 8px;
     border: 1px solid #2929294D;
     padding: 8px;
+}
+
+.prev-dark,
+.next-dark{
+    fill: none;
+    stroke: #F0F0F0;
 }
 
 .icon-prev {
@@ -141,6 +156,22 @@
 .icon-next {
     stroke: #292929;
     fill: none;
+}
+
+.swiper-button-disabled-dark {
+    border: 1px solid #2a2d32;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.swiper-icon-disabled-dark {
+    fill: none;
+    stroke: #383A3D;
 }
 
 .swiper-button-disabled {
@@ -211,8 +242,21 @@
         gap: 24px;
     }
 
+    .prev-dark-btn,
+    .next-dark-btn{
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+}
+
     .button-next,
     .button-prev {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .swiper-button-disabled-dark {
         width: 48px;
         height: 48px;
         padding: 12px;
