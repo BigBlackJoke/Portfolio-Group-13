@@ -14,6 +14,8 @@ export function handleForm() {
     };
     const modal = document.querySelector('.work-together__backdrop');
     const closeModalBtn = document.querySelector('.modal__close');
+    const modalBackdrop = document.querySelector('.work-together__backdrop');
+
     fetch(url, {
       method: "POST",
       headers: {
@@ -23,7 +25,6 @@ export function handleForm() {
     })
       .then((response) => {
         if (!response.ok) {
-          console.log(response.statusText);
           throw new Error("Network response was not ok");
         }
         return response.json();
@@ -32,6 +33,11 @@ export function handleForm() {
         modal.classList.add('active');
         closeModalBtn.addEventListener('click', () => {
           modal.classList.remove('active');
+        });
+        modalBackdrop.addEventListener('click', (event) => {
+          if(event.target===event.currentTarget) {
+            modal.classList.remove('active');
+          }
         });
         contactForm.reset();
       })
