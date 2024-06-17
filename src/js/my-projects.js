@@ -1,37 +1,54 @@
+import energy from '../img/My-project/js-jpg/energy.jpg'
+import energyRetina from "../img/My-project/js-jpg/energy-2x.jpg"
+import fruitbox from "../img/My-project/js-jpg/fruitbox.jpg"
+import fruitboxRetina from "../img/My-project/js-jpg/fruitbox-2x.jpg"
+import jewelry from "../img/My-project/js-jpg/jewelry.jpg"
+import jewelryRetina from "../img/My-project/js-jpg/jewelry-2x.jpg"
+import mimino from "../img/My-project/js-jpg/mimino.jpg"
+import miminoRetina from "../img/My-project/js-jpg/mimino-2x.jpg"
+import power from "../img/My-project/js-jpg/power.jpg"
+import powerRetina from "../img/My-project/js-jpg/power-2x.jpg"
+import starlight from "../img/My-project/js-jpg/starlight.jpg"
+import starlightRetina from "../img/My-project/js-jpg/starlight-2x.jpg"
+import vyshyvanka from "../img/My-project/js-jpg/vyshyvanka.jpg"
+import vyshyvankaRetina from "../img/My-project/js-jpg/vyshyvanka-2x.jpg"
+
+
+
 const arr = [
     {
-        src: "./img/My-project/js-jpg/energy.jpg",
-        retina: "./img/My-project/js-jpg/energy-2x.jpg",
+        src: `${energy}`,
+        retina: `${energyRetina}`,
         alt: "Energy Flow Webservice"
     },
     {
-        src: "./img/My-project/js-jpg/fruitbox.jpg",
-        retina: "./img/My-project/js-jpg/fruitbox-2x.jpg",
+        src: `${fruitbox}`,
+        retina: `${fruitboxRetina}`,
         alt: "fruitbox online store"
     },
     {
-        src: "./img/My-project/js-jpg/jewelry.jpg",
-        retina: "./img/My-project/js-jpg/jewelry-2x.jpg",
+        src: `${jewelry}`,
+        retina: `${jewelryRetina}`,
         alt: "chego jewelry website"
     },
     {
-        src: "./img/My-project/js-jpg/mimino.jpg",
-        retina: "./img/My-project/js-jpg/mimino-2x.jpg",
+        src: `${mimino}`,
+        retina: `${miminoRetina}`,
         alt: "mimino website"
     },
     {
-        src: "./img/My-project/js-jpg/power.jpg",
-        retina: "./img/My-project/js-jpg/power-2x.jpg",
+        src: `${power}`,
+        retina: `${powerRetina}`,
         alt: "power pulse webservice"
     },
     {
-        src: "./img/My-project/js-jpg/starlight.jpg",
-        retina: "./img/My-project/js-jpg/starlight-2x.jpg",
+        src: `${starlight}`,
+        retina: `${starlightRetina}`,
         alt: "starlight studio landing page"
     },
     {
-        src: "./img/My-project/js-jpg/vyshyvanka.jpg",
-        retina: "./img/My-project/js-jpg/vyshyvanka-2x.jpg",
+        src: `${vyshyvanka}`,
+        retina: `${vyshyvankaRetina}`,
         alt: "vyshyvanka vibes Landing Page"
     },
 ]
@@ -98,10 +115,10 @@ function renderImage(array) {
         <p class="technologies">React, JavaScript, Node JS, Git</p>
         <div class="link-wrapper">
           <p class="img-naming">${array.alt}</p>
-          <a class="visit-link" href="">
+          <a class="visit-link" href="javascript:void(0);">
             Visit
-            <svg class="visit-icon" width="24" height="24">
-              <use href="../img/symbol-defs.svg#visit-icon"></use>
+            <svg width="24" height="24">
+              <use href="./img/symbol-defs.svg#icon-visit"></use>
             </svg>
           </a>
         </div>
