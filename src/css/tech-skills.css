@@ -13,6 +13,7 @@
 
 .main-wrapper {
     margin-top: 80px;
+    max-width: 100%;
 }
 
 .tech-skills-section {
@@ -99,4 +100,15 @@
 .dark-mode>.second .tech-skills-item::before {
     transform: translateY(+50%);
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%23f0f0f0" style="fill: var(--color1, %23f0f0f0)" d="M18.809 10.866l-4.92-0.172c-1.359-0.047-2.498 1.015-2.546 2.374l-0.172 4.92c-0.047 1.359 1.015 2.498 2.374 2.546l4.92 0.172c1.359 0.047 2.498-1.015 2.546-2.374l0.172-4.92c0.047-1.359-1.015-2.498-2.374-2.546z"/></svg>');
+}
+@media screen and (min-width: 768px) {
+    .main-wrapper {
+            margin-top: 124px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .main-wrapper {
+            margin-top: 164px;
+        }
 }
