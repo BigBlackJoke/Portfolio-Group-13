@@ -16,6 +16,14 @@
     margin-bottom: 40px;
 }
 
+.dark-mode .review-title, .dark-mode .swiper-slide p.text, .dark-mode .swiper-slide h3.author {
+    color: #fff;
+}
+
+.dark-mode .swiper-slide {
+    background-color: #2A2D32;
+}
+
 .review-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;

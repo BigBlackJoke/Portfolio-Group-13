@@ -18,6 +18,14 @@
     color:rgba(0, 176, 104, 1);
 }
 
+.dark-mode .title-2, .dark-mode .ac .ac-trigger, .dark-mode .ac .ac-panel .ac-text {
+    color: #fff;
+}
+
+.dark-mode .ac {
+    background-color: #2A2D32;
+}
+
 .ac{
     
     border: none;

@@ -15,6 +15,11 @@
     margin-top: 80px;
 }
 
+.tech-skills-section {
+    display: flex;
+    justify-content: center;
+}
+
 .first{
     display: flex;
     width: 100%;

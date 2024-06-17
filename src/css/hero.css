@@ -25,8 +25,8 @@
 }
 
 
-.dark {
-    background-color: #292929;
+.dark-mode .hero-section{
+    background-color: #1e2023;
 }
 
 .hero-title {
@@ -39,8 +39,12 @@
     color: #000000;
 }
 
-.dark .hero-title {
+.dark-mode .hero-title, .dark-mode .link-to-order, .dark-mode .hero-article, .dark-mode .social-links-item a {
     color: #fff;
+}
+
+.dark-mode .social-links {
+    background-color: #2A2D32;
 }
 
 .hero-title span {

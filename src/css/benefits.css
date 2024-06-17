@@ -21,6 +21,10 @@
   gap: 32px;
 }
 
+.dark-mode .benefits-head, .dark-mode .benefits-head-text, .dark-mode .benefits-text {
+  color: #fff;
+}
+
 .benefits-wrapper {
   display: flex;
   justify-content: center;

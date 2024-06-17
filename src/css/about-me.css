@@ -9,6 +9,10 @@
     margin-bottom: 40px;
 }
 
+.dark-mode .title, .dark-mode .title-three, .dark-mode .skills-list-text, .dark-mode .education-role-text {
+    color: #fff;
+}
+
 .title-span {
     color: #00b068;
 }

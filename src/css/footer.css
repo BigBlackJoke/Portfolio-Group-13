@@ -8,8 +8,7 @@
         padding-left: 26px;
         width: 232px;
 }
-.dark{
-    background-color: #292929;
+.dark-mode .footer-logo, .dark-mode .foter-social-item-link, .dark-mode .footer-copiright{
     color:#F0F0F0;
 }
 .footer-logo-span{

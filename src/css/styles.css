@@ -76,7 +76,7 @@
 }
 
 .dark-mode {
-  --bg-color: #1e2023;
-  --color: white;
+  background-color: #1e2023;
+  /* color: white; */
 }
 

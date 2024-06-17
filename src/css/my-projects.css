@@ -15,6 +15,15 @@
     color: #00B068;
 }
 
+.dark-mode .projects-title, .dark-mode .img-naming, .dark-mode .technologies, .dark-mode .load-more-btn {
+    color: #fff;
+}
+
+.dark-mode .visit-link {
+    background-color: #2A2D32;
+    color: #fff;
+}
+
 .image-list {
     display: flex;
     flex-wrap: wrap;
