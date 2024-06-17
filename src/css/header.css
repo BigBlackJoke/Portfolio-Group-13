@@ -2,6 +2,10 @@
   color: var(--accent-green);
 }
 
+:root {
+  --color-primary: #00B068;
+}
+
 .header {
   --header-h: 64px;
   --bg-color: white;
