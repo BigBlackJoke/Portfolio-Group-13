@@ -18,7 +18,7 @@ async function getApi() {
 
 
 function createMarkup(data) {
-    return data.map(el => 
+    return data.map(el =>
     `
         <div class="swiper-slide swiper-dark">
         <p class="text text-dark">${el.review}</p>
@@ -30,56 +30,57 @@ function createMarkup(data) {
     `
     ).join('');
 }
-
 async function initSwiper() {
     try {
     const data = await getApi();
     const markup = createMarkup(data);
-    
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     swiperWrapper.innerHTML = markup;
-    
     const swiper = new Swiper('.swiper-container', {
-        loop: true,
+        loop: false,
         navigation: {
         nextEl: '.button-next',
         prevEl: '.button-prev',
         },
     breakpoints: {
-        320: { 
+        320: {
         slidesPerView: 1,
         spaceBetween: 10
         },
-        768: { 
+        768: {
         slidesPerView: 1,
         spaceBetween: 20
         },
-        1280: { 
+        1280: {
         slidesPerView: 2,
         spaceBetween: 32
         }
     },
-    centeredSlides: false, 
-    slidesPerView: 'auto', 
+    centeredSlides: false,
+    slidesPerView: 'auto',
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     });
-
     swiper.on('slideChange', function () {
         updateNavigationButtons(swiper);
     });
-
     updateNavigationButtons(swiper);
     } catch (error) {
-        console.log(error);
+        iziToast.error({
+            title: 'Error',
+            message: 'Not found',
+            position: 'topRight'
+        });
     }
 }
-
 function updateNavigationButtons(swiper) {
     const { isBeginning, isEnd } = swiper;
     const prevButton = document.querySelector('.button-prev');
     const nextButton = document.querySelector('.button-next');
     const prevIcon = document.querySelector('.icon-prev');
     const nextIcon = document.querySelector('.icon-next');
-    
     if (isBeginning) {
     prevButton.classList.add('swiper-button-disabled');
     prevIcon.classList.add('swiper-icon-disabled');
@@ -87,7 +88,6 @@ function updateNavigationButtons(swiper) {
     prevButton.classList.remove('swiper-button-disabled');
     prevIcon.classList.remove('swiper-icon-disabled');
     }
-    
     if (isEnd) {
     nextButton.classList.add('swiper-button-disabled');
     nextIcon.classList.add('swiper-icon-disabled');
@@ -96,5 +96,4 @@ function updateNavigationButtons(swiper) {
     nextIcon.classList.remove('swiper-icon-disabled');
     }
 }
-
 document.addEventListener('DOMContentLoaded', initSwiper);
