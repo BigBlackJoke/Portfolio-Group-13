@@ -9,7 +9,10 @@
     margin-bottom: 40px;
 }
 
-.dark-mode .title, .dark-mode .title-three, .dark-mode .skills-list-text, .dark-mode .education-role-text {
+.dark-mode .title,
+.dark-mode .title-three,
+.dark-mode .skills-list-text,
+.dark-mode .education-role-text {
     color: #fff;
 }
 
@@ -22,6 +25,7 @@
 }
 
 .img-about-me {
+    overflow: hidden;
     margin-bottom: 40px;
 }
 
