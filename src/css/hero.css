@@ -8,6 +8,7 @@
     fill: #00B068;
     filter: blur(2px);
     position: absolute;
+    z-index: -1;
 }
 
 .background-1 {
