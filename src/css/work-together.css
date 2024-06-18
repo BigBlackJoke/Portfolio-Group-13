@@ -95,7 +95,7 @@
   opacity: 0;
   position: absolute;
   bottom: 12px;
-  
+
   font-weight: 300;
   font-size: 12px;
   line-height: 133%;
@@ -104,7 +104,8 @@
 
   transition: opacity var(--transition);
 }
-.work-together__email:not(:placeholder-shown):invalid~.work-together__text-invalid {
+.work-together__email:not(:placeholder-shown):invalid
+  ~ .work-together__text-invalid {
   opacity: 1;
 }
 .work-together__icon-success {
@@ -113,12 +114,13 @@
   right: 16px;
   width: 16px;
   height: 16px;
-  background-color: var(--light-grey);
+  background-color: transparent;
   opacity: 0;
 
   transition: opacity var(--transition);
 }
-.work-together__email:not(:placeholder-shown):valid~.work-together__icon-success {
+.work-together__email:not(:placeholder-shown):valid
+  ~ .work-together__icon-success {
   opacity: 1;
 }
 .work-together__button {
@@ -160,15 +162,13 @@
   transform: translateX(-100%);
   pointer-events: none;
 
-  transition: opacity var(--transition),
-              width var(--transition);
+  transition: opacity var(--transition), width var(--transition);
 }
 .work-together__backdrop.active {
   width: 100%;
   transform: translateX(0);
   opacity: 1;
-  transition: opacity var(--transition),
-              transform var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
   pointer-events: all;
 }
 .work-together__modal {
@@ -213,8 +213,7 @@
 }
 .dark-mode .work-together__title,
 .dark-mode .work-together__text,
-.dark-mode .work-together__address
-{
+.dark-mode .work-together__address {
   color: var(--white);
 }
 .dark-mode .work-together__email,
@@ -234,10 +233,6 @@
   background-color: #14c57c;
   color: #1e2023;
 }
-
-.dark-mode .work-together__icon-success {
-  background-color: #2a2d32;
-}
 .dark-mode .work-together__backdrop {
   background-color: rgba(30, 32, 35, 0.8);
 }
@@ -255,12 +250,11 @@
   stroke: var(--white);
 }
 
-@media screen and (min-width:360px) {
-  
+@media screen and (min-width: 360px) {
 }
 
-@media screen and (min-width:768px) {
-  .work-together {
+@media screen and (min-width: 768px) {
+  .work-together .container {
     background-image: url('../img/decor-1.png');
     background-repeat: no-repeat;
     background-position: top 20px left 75%;
@@ -296,12 +290,17 @@
   }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
   .work-together .container {
     display: flex;
     justify-content: space-between;
     align-items: end;
     column-gap: 117px;
+
+    background-image: url('/img/decor-1.png');
+    background-repeat: no-repeat;
+    background-position: top 60px right 0px;
+    background-size: 37%;
   }
   .work-together__wrapper {
     max-width: 610px;
