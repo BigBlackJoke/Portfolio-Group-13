@@ -116,7 +116,7 @@ function renderImage(array) {
         <p class="technologies">React, JavaScript, Node JS, Git</p>
         <div class="link-wrapper">
           <p class="img-naming">${array.alt}</p>
-          <a class="visit-link" href="javascript:void(0);">
+          <a class="visit-link" href="https://github.com/BigBlackJoke/Portfolio-Group-13" target="_blank">
             Visit
             <svg width="24" height="24">
               <use href="${icon}#icon-visit"></use>
