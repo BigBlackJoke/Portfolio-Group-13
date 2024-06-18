@@ -14,6 +14,7 @@
 .main-wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
+    overflow: hidden;
     max-width: 100%;
 }
 
