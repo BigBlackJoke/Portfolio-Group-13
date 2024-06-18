@@ -25,13 +25,13 @@
 }
 
 .cont-image {
+  max-width: 320px;
   border-radius: 17px;
   overflow: hidden;
   margin-bottom: 40px;
 }
 
 /* .img-about-me {
-    margin-bottom: 40px;
 } */
 
 .title-three {
@@ -112,6 +112,7 @@
   }
 
   .cont-image {
+    max-width: 336px;
     margin-bottom: 0;
   }
 
@@ -154,7 +155,7 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
-  
+
   /* =============================== */
   .cont-education-role {
     display: flex;
@@ -186,6 +187,10 @@
   .cont-about-me {
     width: 1280px;
     padding: 82px 32px;
+  }
+
+  .cont-image {
+    max-width: 384px;
   }
 
   .img-about-me {
