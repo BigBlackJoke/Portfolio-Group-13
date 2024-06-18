@@ -117,6 +117,7 @@
   row-gap: 24px;
   align-items: center;
   justify-content: center;
+  transition: right 750ms;
 }
 
 .header-nav.active {
