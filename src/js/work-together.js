@@ -12,6 +12,7 @@ export function handleForm() {
       email: email,
       comment: message,
     };
+    // const pageBody = document.querySelector('body');
     const modal = document.querySelector('.work-together__backdrop');
     const closeModalBtn = document.querySelector('.modal__close');
     const modalBackdrop = document.querySelector('.work-together__backdrop');
@@ -31,12 +32,15 @@ export function handleForm() {
       })
       .then((data) => {
         modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
         closeModalBtn.addEventListener('click', () => {
           modal.classList.remove('active');
+          document.body.style.overflow = 'visible';
         });
         modalBackdrop.addEventListener('click', (event) => {
           if(event.target===event.currentTarget) {
             modal.classList.remove('active');
+            document.body.style.overflow = 'visible';
           }
         });
         contactForm.reset();
