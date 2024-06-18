@@ -12,6 +12,7 @@ import starlight from "../img/My-project/js-jpg/starlight.jpg"
 import starlightRetina from "../img/My-project/js-jpg/starlight-2x.jpg"
 import vyshyvanka from "../img/My-project/js-jpg/vyshyvanka.jpg"
 import vyshyvankaRetina from "../img/My-project/js-jpg/vyshyvanka-2x.jpg"
+import icon from "../img/symbol-defs.svg"
 
 
 
@@ -118,7 +119,7 @@ function renderImage(array) {
           <a class="visit-link" href="javascript:void(0);">
             Visit
             <svg width="24" height="24">
-              <use href="./img/symbol-defs.svg#icon-visit"></use>
+              <use href="${icon}#icon-visit"></use>
             </svg>
           </a>
         </div>
