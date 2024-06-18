@@ -168,7 +168,7 @@
 @media screen and (min-width: 375px) {
     .background-2 {
         top: 10px;
-        left: 1px;
+        left: -75px;
     }
 
     .decorative {
