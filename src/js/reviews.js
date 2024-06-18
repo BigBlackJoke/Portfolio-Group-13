@@ -1,22 +1,18 @@
 import axios from 'axios';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-
-
 async function getApi() {
     const BASE_URL = 'https://portfolio-js.b.goit.study/api';
     const END_POINT = '/reviews';
     const url = `${BASE_URL}${END_POINT}`;
     try {
     const response = await axios.get(url);
-    return response.data; 
+    return response.data;
     } catch (error) {
     console.error('Error fetching data from API', error);
     throw error;
     }
 }
-
-
 function createMarkup(data) {
     return data.map(el =>
     `
@@ -81,19 +77,31 @@ function updateNavigationButtons(swiper) {
     const nextButton = document.querySelector('.button-next');
     const prevIcon = document.querySelector('.icon-prev');
     const nextIcon = document.querySelector('.icon-next');
+    const prevButtonDark = document.querySelector('.prev-dark-btn');
+    const nextButtonDark = document.querySelector('.next-dark-btn');
+    const prevIconDark = document.querySelector('.prev-dark');
+    const nextIconDark = document.querySelector('.next-dark');
     if (isBeginning) {
     prevButton.classList.add('swiper-button-disabled');
     prevIcon.classList.add('swiper-icon-disabled');
+    prevButtonDark.classList.add('swiper-button-disabled-dark');
+    prevIconDark.classList.add('swiper-icon-disabled-dark');
     } else {
     prevButton.classList.remove('swiper-button-disabled');
     prevIcon.classList.remove('swiper-icon-disabled');
+    prevButtonDark.classList.remove('swiper-button-disabled-dark');
+    prevIconDark.classList.remove('swiper-icon-disabled-dark');
     }
     if (isEnd) {
     nextButton.classList.add('swiper-button-disabled');
     nextIcon.classList.add('swiper-icon-disabled');
+    nextButtonDark.classList.add('swiper-button-disabled-dark');
+    nextIconDark.classList.add('swiper-icon-disabled-dark');
     } else {
     nextButton.classList.remove('swiper-button-disabled');
     nextIcon.classList.remove('swiper-icon-disabled');
+    nextButtonDark.classList.remove('swiper-button-disabled-dark');
+    nextIconDark.classList.remove('swiper-icon-disabled-dark');
     }
 }
 document.addEventListener('DOMContentLoaded', initSwiper);
