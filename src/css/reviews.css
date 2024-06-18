@@ -6,6 +6,19 @@
     background-color: #2A2D32;
 }
 
+.dark-mode .button-next, .dark-mode .button-prev{
+    background-color: transparent;
+    border: 1px solid #383A3D;
+}
+
+.dark-mode .icon-next, .dark-mode .icon-prev{
+    stroke: #fff;
+}
+
+.dark-mode .swiper-icon-disabled {
+    stroke: #383A3D;
+}
+
 .review-title {
     font-family: "Impact", sans-serif;
     font-weight: 400;
