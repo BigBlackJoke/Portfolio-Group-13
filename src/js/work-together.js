@@ -35,6 +35,7 @@ export function handleForm() {
         document.body.style.overflow = 'hidden';
         closeModalBtn.addEventListener('click', () => {
           modal.classList.remove('active');
+          document.body.style.overflow = 'visible';
         });
         modalBackdrop.addEventListener('click', (event) => {
           if(event.target===event.currentTarget) {
