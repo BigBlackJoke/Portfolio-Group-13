@@ -80,9 +80,10 @@
 
 }
 
-.visit-icon {
-    stroke: #00B068;
+.img {
+    border-radius: 30px;
 }
+
 
 .load-more-btn{
     display: block;
